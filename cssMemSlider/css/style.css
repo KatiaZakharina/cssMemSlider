@@ -1,0 +1,34 @@
+/*
+* @prettier
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-light: #f2f6f7;
+  --bg-dark-red: #d57a76;
+  --beige-color: #f6e5d0;
+  --active-color: #e7c47c; /*BFE1DD*/
+  --font1: 40px;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.mem-page {
+  height: 100%;
+  background-color: var(--bg-light);
+}
+.mem-page__container {
+  max-width: 1440px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 75px 0;
+}
+.mem-page__title{
+    font-size: var(--font1);
+    font-weight: bold;
+}
