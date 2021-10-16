@@ -57,7 +57,6 @@ body {
 
 .slider__inner {
   position: relative;
-  /* top: -30px; */
   overflow: hidden;
 }
 
@@ -74,24 +73,38 @@ body {
 }
 .slider__controls {
   margin-top: 20px;
-  /* position: relative; */
-  /* top: 415px; */
   margin-bottom: 10px;
   text-align: center;
 }
 
 .slider__label {
-  box-sizing: content-box;
+  position: relative;
   display: inline-block;
   width: 10px;
   height: 10px;
   margin: 0 3px;
   background-color: #cccccc;
-  border: 4px solid white;
+  border: 2px solid white;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 80%);
   transition: background-color 0.2s;
   cursor: pointer;
+}
+.slider__label::after {
+  display: block;
+  top: -10px;
+  left: -5px;
+  position: relative;
+  z-index: 3;
+  content: '';
+  width: 15px;
+  height: 25px;
+}
+.slider__label:hover {
+  background-color: var(--active-color);
+}
+.slider__label:active {
+  background-color: var(--bg-dark-red);
 }
 
 #btn-1:checked ~ .slider__controls label[for='btn-1'],
