@@ -165,7 +165,11 @@ body {
     --width: calc(70vw);
   }
   html {
+<<<<<<< HEAD
     font-size: 0.5rem;
+=======
+    font-size: 0.8rem;
+>>>>>>> ee1e57ed7ca309747710ad70558b88e9513082c0
   }
   .mem-page__slider {
     max-width: 80rem;
@@ -182,6 +186,10 @@ body {
     width: calc(100% - 2rem);
   }
   html {
+<<<<<<< HEAD
     font-size: 0.4rem;
+=======
+    font-size: 0.6rem;
+>>>>>>> ee1e57ed7ca309747710ad70558b88e9513082c0
   }
 }
